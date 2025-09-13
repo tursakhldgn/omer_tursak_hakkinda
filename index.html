@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ömer Turşak — Hakkımda</title>
+
+  <!-- Font Awesome ikonları -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --bg:#f9f9f9;
+      --text:#333;
+      --footer-bg:#222;
+      --btn-radius:8px;
+    }
+
+    *{box-sizing:border-box}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .about {
+      padding: 50px 20px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      border: 3px solid #555;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 8px 0 6px;
+    }
+
+    .about p {
+      font-size: 16px;
+      max-width: 700px;
+      margin: 0.6em auto;
+      padding: 0 10px;
+      text-align: left;
+    }
+
+    footer.socials {
+      background: var(--footer-bg);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    footer h2 {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column; /* alt alta dizilim */
+      align-items: center;
+      gap: 12px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 240px;
+      padding: 12px 16px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      border-radius: var(--btn-radius);
+      transition: transform .12s ease, opacity .12s ease;
+      justify-content: flex-start;
+    }
+
+    .social-links a i { font-size: 20px; width: 28px; text-align: center; }
+
+    .youtube { background: #ff0000; }
+    .instagram { background: linear-gradient(45deg,#fdf497 0%,#fd5949 50%,#d6249f 75%,#285AEB 100%); }
+    .tiktok { background: #010101; }
+
+    .social-links a:hover,
+    .social-links a:focus { transform: translateY(-3px); opacity: 0.95; outline: none; box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+    .social-links a:focus { outline: 3px solid rgba(255,255,255,0.12); }
+
+    @media (max-width:480px){
+      .profile-img { width: 120px; height: 120px; }
+      .social-links a { width: 90%; font-size: 17px; justify-content: center; }
+      .about p { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hakkımda Bölümü -->
+  <section class="about">
+    <!-- Eğer ben.jpg bulunmazsa otomatik avatar yükler -->
+    <img src="ben.jpg"
+         alt="Ömer Turşak — profil fotoğrafı"
+         class="profile-img"
+         onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=%C3%96mer+Tur%C5%9Fak&size=300'">
+
+    <h1>Ömer Turşak</h1>
+
+    <p>
+      Merhaba, ben <strong>Ömer Turşak</strong>. 16 yaşındayım ve <strong>Nigar Ertürk Mesleki ve Teknik Anadolu Lisesi
+      Bilişim Bölümü</strong> öğrencisiyim. Bilgisayar teknolojileri, yazılım geliştirme ve internet dünyasıyla ilgileniyorum.
+      Kendimi özellikle web tasarımı, temel programlama ve dijital içerik üretimi alanlarında geliştirmeye çalışıyorum.
+    </p>
+
+    <p>
+      Bunun yanında aktif olarak <strong>YouTube</strong>, <strong>Instagram</strong> ve <strong>TikTok</strong> platformlarında
+      içerik üretiyorum. Hem eğlenceli hem de oyun içerikleriyle sosyal medyada yer alıyor; takipçilerimle deneyimlerimi ve
+      oyun anlarımı paylaşmayı seviyorum. Dijital dünyada iz bırakmak ve daha geniş kitlelere ulaşmak hedeflerim arasında.
+    </p>
+  </section>
+
+  <!-- Sosyal Medya Bölümü -->
+  <footer class="socials">
+    <h2>Beni Takip Et</h2>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@slayer_oyuncu" target="_blank" rel="noopener noreferrer" class="youtube">
+        <i class="fab fa-youtube" aria-hidden="true"></i> <span>YouTube</span>
+      </a>
+
+      <a href="https://www.instagram.com/omertursak_/" target="_blank" rel="noopener noreferrer" class="instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i> <span>Instagram</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@omertursk" target="_blank" rel="noopener noreferrer" class="tiktok">
+        <i class="fab fa-tiktok" aria-hidden="true"></i> <span>TikTok</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
