@@ -1,0 +1,1 @@
+# omer_tursak_hakkinda
